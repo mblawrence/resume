@@ -1,0 +1,99 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+\documentclass[10pt, a4paper]{article}
+\usepackage{fontspec}
+\defaultfontfeatures{ Path = ./fonts/ }
+\usepackage{multicol}
+\usepackage{xcolor}
+\usepackage{color}
+\pagenumbering{gobble}
+
+% \usepackage{graphicx}
+% \def\ci#1{\textcircled{\resizebox{.5em}{!}{#1}}}
+\usepackage{hyperref, tikz}
+\usepackage{algorithmic}
+\newcommand*\circled[1]{\tikz[baseline=(char.base)]{
+            \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
+\definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
+\def\skills#1#2{%
+  #1 &
+    \foreach \index in {1, ..., 7} {%
+    \ifnum\index > #2
+      \textcolor{airforceblue!30}{\CIRCLE}
+    \else
+      \textcolor{airforceblue}{\CIRCLE}\hspace{0.015cm}
+    \fi
+    }
+  % \foreach \index in {#2, ..., 6} {%
+  %   \Circle
+  %   }
+  \\
+}
+% DOCUMENT LAYOUT
+\usepackage[margin=1.2in]{geometry} 
+\setlength\parindent{0in}
+\setlength{\columnseprule}{0.25pt}
+% \def\columnseprulecolor{\color{blue}}
+
+% fix for pandoc 1.14
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+% Reduce spacing in itemize, enumerate and titles
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{longtable}
+
+\setenumerate{nolistsep}
+\setitemize{nolistsep}
+
+% FONTS
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage{fontawesome}
+\usepackage{wasysym}
+\defaultfontfeatures{Mapping=tex-text} % converts LaTeX specials (quotes'' --- dashes etc.) to unicode
+% \setromanfont[Ligatures={Common}, Numbers={OldStyle}]{Palatino}
+% \setmonofont[Scale=1.0]{Monaco} 
+% \setsansfont[Scale=1.0]{Optima Regular} 
+
+% HEADINGS and TITLES
+\usepackage{sectsty}
+\usepackage[normalem]{ulem}
+\sectionfont{\sffamily\mdseries\large\underline} % Underlines headings
+\setcounter{secnumdepth}{-1} % Removes the numbers before sections
+\subsectionfont{\rmfamily\mdseries\scshape\normalsize}
+\subsubsectionfont{\rmfamily\bfseries\upshape\normalsize}
+
+\usepackage{titling}
+\setlength{\droptitle}{-100pt} % The negative number moves the title closer to the top of the page
+\title{$title$\vspace{-1.75ex}} % name $if(title)$$title$$endif$
+\date{$if(date)$$date$\\$endif$} % Leave blank to remove the date
+% \author{$if(website)$$website$\\\\$endif$
+% % $street$ \textbar{} $city$, $postcode$\\ %Put your address here
+% % \vspace{-20ex}
+% \faPhone \hspace{0.005cm} $phone$ \textbullet\hspace{0.005cm} \faEnvelopeO \hspace{0.005cm} $email$ 
+% \textbullet\hspace{0.005cm} \faLinkedinSquare \hspace{0.005cm} $linkedin$} % put your contact information here
+\setmainfont[BoldFont={Aller}]{Aller Light}
+% BEGIN DOCUMENT
+\begin{document}
+\maketitle{}
+\vspace{-12.5ex} % spacing between author and horizontal rule
+\color{airforceblue}
+\centerline{
+\circled{\faPhone}\color{black} $phone$ \color{airforceblue}
+\textbullet\hspace{0.003cm}
+\circled{\faEnvelopeO} \color{black} $email$ \color{airforceblue}
+\textbullet\hspace{0.003cm}
+\circled{\faLinkedin} \color{black}$linkedin$ \color{airforceblue}
+}
+\color{black}
+\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+\begin{multicols}{2}
+\begin{small}
+\begin{raggedright}
+$body$
+\end{raggedright}
+\end{small}
+\end{multicols}
+\end{document}
