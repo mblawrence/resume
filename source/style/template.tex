@@ -16,6 +16,10 @@
             \node[shape=circle,draw,inner sep=1pt] (char) {#1};}}
 % \definecolor{airforceblue}{rgb}{0.36, 0.54, 0.66}
 \definecolor{airforceblue}{RGB}{0, 113, 148}
+\newcommand{\foo}{
+  \begin{tabular}{ll} \\
+  \qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad\qquad & \multicolumn{1}{l}{\tiny{average} \qquad \tiny{good} \qquad  \tiny{skilled}} \\
+}
 \def\skills#1#2{%
   #1 &
     \foreach \index in {1, ..., 7} {%
