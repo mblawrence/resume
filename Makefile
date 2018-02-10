@@ -25,23 +25,23 @@ help:
 pdf:
 	pandoc -s -f markdown-auto_identifiers \
 	"$(INPUTDIR)"/*.md \
-	-o "$(OUTPUTDIR)/cv.pdf" \
+	-o "$(OUTPUTDIR)/MattLawrenceResume.pdf" \
 	--template="$(STYLEDIR)/template.tex" \
 	--pdf-engine=xelatex
 
 tex:
 	pandoc -s \
 	"$(INPUTDIR)"/*.md \
-	-o "$(OUTPUTDIR)/cv.tex" \
+	-o "$(OUTPUTDIR)/MattLawrenceResume.tex" \
 	--template="$(STYLEDIR)/template.tex" \
 	--pdf-engine=xelatex
 
 docx:
 	pandoc "$(INPUTDIR)"/*.md \
-	-o "$(OUTPUTDIR)/cv.docx" \
+	-o "$(OUTPUTDIR)/MattLawrenceResume.docx" \
 
 html:
 	pandoc "$(INPUTDIR)"/*.md \
-	-o "$(OUTPUTDIR)/cv.html"
+	-o "$(OUTPUTDIR)/MattLawrenceResume.html"
 
 .PHONY: help pdf docx html tex
