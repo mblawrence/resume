@@ -93,14 +93,15 @@ customer Marketing Data in a PaaS offering.
 \end{tabular} 
 
 # EDUCATION
-> **\textcolor{airforceblue}{ADV SOFTWARE SYSTEMS (Cert)}**  
+**\color{airforceblue}ADV SOFTWARE SYSTEMS (Cert)**  
 **School of Engineering**  
 _Stanford University_  
 
+\   
   
-> **\textcolor{airforceblue}{B.A. COMPUTER SCIENCE}**  
+**\color{airforceblue}{B.A. COMPUTER SCIENCE}**  
 **Baskin School of Engineering**  
-_Univsersity of California, Santa Cruz_
+_Univsersity of California, Santa Cruz_  
 
 
 ### References
