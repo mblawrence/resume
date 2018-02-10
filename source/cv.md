@@ -35,7 +35,7 @@ customer Marketing Data in a PaaS offering.
 > High Profile team working cross-orginaltion  xing mission-critical bugs impacting our publishing (Time/NatGeo) and enterprise customers. Apps and web services. Java/ObjC/C++/ JavaScript on iOS/Mac/Win/Android/Splunk
 \   
 
-> **Lead SQE Developer - Flash**
+> **Lead SQE Developer - Flash**  
 > Designed and implemented a web service to collect tests results, from all geographies, and present the data in a clear, e cient way. Cold- Fusion, Python, & Java. Worked on migrating to a continuous integration solution (Jenkins).  
 \   
 
