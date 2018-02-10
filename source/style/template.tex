@@ -71,7 +71,6 @@
 % \title{$title$\vspace{-1.75ex}} % name $if(title)$$title$$endif$
 \date{$if(date)$$date$\\$endif$} % Leave blank to remove the date
 
-$title$
 % \author{$if(website)$$website$\\\\$endif$
 % % $street$ \textbar{} $city$, $postcode$\\ %Put your address here
 % % \vspace{-20ex}
@@ -80,16 +79,20 @@ $title$
 \setmainfont[BoldFont={Aller}]{Aller Light}
 % BEGIN DOCUMENT
 \begin{document}
+\pretitle{\begin{flushleft}}
+\title{\Huge{$name$}\color{airforceblue}\\\Large{$description$}\color{black}}
+\posttitle{\end{flushleft}}
 \maketitle{}
-\vspace{-12.5ex} % spacing between author and horizontal rule
 \color{airforceblue}
-\centerline{
+\vspace{-15.0ex} % spacing between author and horizontal rule
+\color{airforceblue}
+% \centerline{
 \circled{\faPhone}\color{black} $phone$ \color{airforceblue}
 \textbullet\hspace{0.003cm}
 \circled{\faEnvelopeO} \color{black} $email$ \color{airforceblue}
 \textbullet\hspace{0.003cm}
-\circled{\faLinkedin} \color{black}$linkedin$ \color{airforceblue}
-}
+\circled{\faLinkedin} \color{black}$linkedin$ \color{airforceblue} \\
+% }
 \color{black}
 \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 \begin{multicols}{2}

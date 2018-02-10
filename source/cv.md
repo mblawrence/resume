@@ -1,5 +1,6 @@
 ---
-title: 'MATT LAWRENCE'
+name: 'MATT LAWRENCE'
+description: 'COMPUTER SCIENTIST II'
 phone: +1(831) 247-0619
 email: mblawrence@gmail.com
 linkedin: in/mblawrence
