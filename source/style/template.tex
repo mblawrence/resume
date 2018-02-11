@@ -7,6 +7,8 @@
 \usepackage{xcolor}
 \usepackage{color}
 \pagenumbering{gobble}
+\usepackage{booktabs}  
+
 
 % \usepackage{graphicx}
 % \def\ci#1{\textcircled{\resizebox{.5em}{!}{#1}}}
@@ -31,9 +33,14 @@
   \\
 }
 % DOCUMENT LAYOUT
-\usepackage[margin=1.2in]{geometry} 
+% \usepackage[margin=1.10in]{geometry} 
 \setlength\parindent{0in}
-\setlength{\columnseprule}{0.25pt}
+% \setlength{\columnseprule}{0.05pt}
+\addtolength{\oddsidemargin}{-.875in}
+\addtolength{\evensidemargin}{-.875in}
+\addtolength{\textwidth}{1.75in}
+\addtolength{\topmargin}{-.575in}
+\addtolength{\textheight}{1.75in}
 % \def\columnseprulecolor{\color{blue}}
 
 % fix for pandoc 1.14
@@ -80,32 +87,36 @@
 \usepackage{booktabs}  
 
 % BEGIN DOCUMENT
+\usepackage{colortbl}
+
 \begin{document}
 \color{black}
-\pretitle{\color{airforceblue}\noindent\makebox[\linewidth]{\rule{\paperwidth}{25pt}}\color{black}\begin{flushleft}}
-\title{\Huge{\textbf{$name$}}\color{airforceblue}\\\Large{\textbf{$description$}}\color{black}}
+\pretitle{\color{airforceblue}\noindent\makebox[\linewidth]{\rule{\paperwidth}{25pt}}\color{black}\begin{flushleft}\bigskip\bigskip}
+\title{\fontsize{36}{44}{\textbf{$name$}}\color{airforceblue}\\\Huge{\textbf{$description$}}\color{black}}
 \posttitle{\end{flushleft}}
 \maketitle{}
 \color{airforceblue}
-\vspace{-25.5ex} %
-\color{airforceblue}
+\vspace{-29.0ex} %
+\color{black}
 % \centerline{
 
 \begin{flushright}
 
 \begin{tabular}{rl}
-& \textbf{GET IN TOUCH:} \color{black}\\ [1ex]
-% \cline{2-2}
+& \textbf{GET IN TOUCH:} \color{black}\\
+\cmidrule{2-2}
  & \color{airforceblue}Mobile \\
- \color{airforceblue}\circled{\faPhone} & \color{black} $phone$ \\ [1ex]
- & Email \\
- \color{airforceblue} \circled{\faEnvelopeO} & \color{black} $email$ \\
- & LinkedIn  \\
+ \color{airforceblue}\circled{\faPhone} & \color{black} $phone$ \smallskip \\ 
+ \arrayrulecolor{airforceblue}\cmidrule{2-2}
+ & \color{airforceblue}Email \\
+  \color{airforceblue} \circled{\faEnvelopeO} & \color{black} $email$ \smallskip \\
+ \cmidrule{2-2}
+ & \color{airforceblue}LinkedIn  \\
  \color{airforceblue}\circled{\faLinkedin} & \color{black}$linkedin$ \color{airforceblue} \\
 \end{tabular}
 \end{flushright}
 % }
-\vspace{5.0ex}
+\vspace{1.0ex}
 \color{black}
 % \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 \begin{multicols}{2}
