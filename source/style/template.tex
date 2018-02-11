@@ -68,7 +68,8 @@
 % HEADINGS and TITLES
 \usepackage{sectsty}
 \usepackage[normalem]{ulem}
-\sectionfont{\sffamily\mdseries\large\underline} % Underlines headings
+% \sectionfont{\sffamily\mdseries\large\underline} % Underlines headings
+\sectionfont{\sffamily\mdseries\large\sectionrule{0pt}{0pt}{-4pt}{0.25pt}} % Underlines headings
 \setcounter{secnumdepth}{-1} % Removes the numbers before sections
 \subsectionfont{\rmfamily\mdseries\scshape\normalsize}
 \subsubsectionfont{\rmfamily\bfseries\upshape\normalsize}
@@ -99,14 +100,13 @@
 \vspace{-29.0ex} %
 \color{black}
 % \centerline{
-
+\begin{bfseries}
 \begin{flushright}
-
 \begin{tabular}{rl}
-& \textbf{GET IN TOUCH:} \color{black}\\
+& GET IN TOUCH: \color{black}\\
 \cmidrule{2-2}
  & \color{airforceblue}Mobile \\
- \color{airforceblue}\circled{\faPhone} & \color{black} $phone$ \smallskip \\ 
+ \color{airforceblue}\circled{\faPhone} & \color{black} \textbf{$phone$} \smallskip \\ 
  \arrayrulecolor{airforceblue}\cmidrule{2-2}
  & \color{airforceblue}Email \\
   \color{airforceblue} \circled{\faEnvelopeO} & \color{black} $email$ \smallskip \\
@@ -116,6 +116,7 @@
 \end{tabular}
 \end{flushright}
 % }
+\end{bfseries}
 \vspace{1.0ex}
 \color{black}
 % \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}

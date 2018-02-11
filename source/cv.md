@@ -54,7 +54,9 @@ customer Marketing Data in a PaaS offering.
 #### \color{airforceblue}**BORLAND, INTERNATIONAL**
 (_1992 - 1997_)
 
-* **C++ Developer Support**
+> **C++ Developer Support**
+
+> Consulting with customers on complex assembly & C++ Development on Windows
 
 \columnbreak
 
