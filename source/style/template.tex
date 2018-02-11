@@ -77,24 +77,37 @@
 % \faPhone \hspace{0.005cm} $phone$ \textbullet\hspace{0.005cm} \faEnvelopeO \hspace{0.005cm} $email$ 
 % \textbullet\hspace{0.005cm} \faLinkedinSquare \hspace{0.005cm} $linkedin$} % put your contact information here
 \setmainfont[BoldFont={Aller}]{Aller Light}
+\usepackage{booktabs}  
+
 % BEGIN DOCUMENT
 \begin{document}
-\pretitle{\begin{flushleft}}
+\color{black}
+\pretitle{\color{airforceblue}\noindent\makebox[\linewidth]{\rule{\paperwidth}{25pt}}\color{black}\begin{flushleft}}
 \title{\Huge{\textbf{$name$}}\color{airforceblue}\\\Large{\textbf{$description$}}\color{black}}
 \posttitle{\end{flushleft}}
 \maketitle{}
 \color{airforceblue}
-\vspace{-15.0ex} % spacing between author and horizontal rule
+\vspace{-25.5ex} %
 \color{airforceblue}
 % \centerline{
-\circled{\faPhone}\color{black} $phone$ \color{airforceblue}
-\textbullet\hspace{0.003cm}
-\circled{\faEnvelopeO} \color{black} $email$ \color{airforceblue}
-\textbullet\hspace{0.003cm}
-\circled{\faLinkedin} \color{black}$linkedin$ \color{airforceblue} \\
+
+\begin{flushright}
+
+\begin{tabular}{rl}
+& \textbf{GET IN TOUCH:} \color{black}\\ [1ex]
+% \cline{2-2}
+ & \color{airforceblue}Mobile \\
+ \color{airforceblue}\circled{\faPhone} & \color{black} $phone$ \\ [1ex]
+ & Email \\
+ \color{airforceblue} \circled{\faEnvelopeO} & \color{black} $email$ \\
+ & LinkedIn  \\
+ \color{airforceblue}\circled{\faLinkedin} & \color{black}$linkedin$ \color{airforceblue} \\
+\end{tabular}
+\end{flushright}
 % }
+\vspace{5.0ex}
 \color{black}
-\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+% \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 \begin{multicols}{2}
 \begin{small}
 \begin{raggedright}
