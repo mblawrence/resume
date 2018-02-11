@@ -6,7 +6,7 @@ INPUTDIR=$(BASEDIR)/source
 OUTPUTDIR=$(BASEDIR)/output
 STYLEDIR=$(INPUTDIR)/style
 
-help:
+.help:
 	@echo ' 																	  '
 	@echo 'Makefile for the Markdown CV                                       '
 	@echo '                                                                       '
