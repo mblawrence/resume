@@ -76,6 +76,7 @@ customer Marketing Data in a PaaS offering.
 \skills{CI/CD}{7}
 \skills{Ethos/Moonbeam}{7}
 \skills{Jenkins}{7}
+\skills{\TeX}{4}
 
 \end{tabular} 
 
@@ -89,6 +90,8 @@ customer Marketing Data in a PaaS offering.
 \skills{Communication}{6}
 \skills{Problem Solving}{7}
 \skills{Tenacity}{7}
+\skills{Humor}{7}
+\skills{Humor (according to my wife)}{1}
 
 \end{tabular} 
 
