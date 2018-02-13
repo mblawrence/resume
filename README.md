@@ -1,6 +1,6 @@
 markdown-cv [![Build Status](https://travis-ci.org/tompollard/markdown-cv.svg?branch=master)](https://travis-ci.org/tompollard/markdown-cv)
 ===========
-
+[This link](../v1scripts/README.md)
 Simple Markdown CV / Resume
 
 ## Acknowledgments
