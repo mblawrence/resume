@@ -11,12 +11,6 @@ header-includes:
         \let\Begin\begin
         \let\End\end
       }
-    -  
-# output: 
-#   pdf_document:
-#     pandoc_args: [
-#       "-V", "classoption=twocolumn"
-#     ]
 ...
 # EMPLOYMENT
 
